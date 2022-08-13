@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 96px;
+}
+
+.card-container {
+    width: 600px;
+    height: 800px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1000px;
+    margin: 0px auto;
+}
+
+/* ****************
+TOP CARD********
+*****************/
+
+/* Sets the properties of the Card and its display properties*/
+.top-card {
+    background-color: #fcebeb;
+    width: 550px;
+    height: 350px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 310px 210px;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    align-items: center;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Sets the properties for the first column*/
+.top-card-left {
+    display: grid;
+    height: 250px;
+    padding-left: 20px;
+    justify-items: center;
+}
+
+/* Styles for the text element for the left column*/
+.top-card-title-left {
+    font-weight: 700;
+}
+
+/* Styles for the top right text element for the right column*/
+.top-card-title-right-description {
+    font-weight: 500;
+}
+
+/* Sets the propertiesfor the second column*/
+.top-card-right {
+    display: grid;
+    height: 260px;
+}
+
+/* Styles the properties  for the content on the right column */
+.top-card-title-right {
+    display: grid;
+    font-size: 16px;
+    gap: 50px;
+}
+
+/* Styles the whitespace between the content for the right column */
+.top-card-title-right-description {
+    color: #ff4848;
+    display: grid;
+    font-size: 22px;
+    align-items: right;
+}
+
+/* Styles the whitespace between the content for the right column */
+.top-card-title-amount {
+    color: #ff4848;
+    font-size: 68px;
+    font-weight: 500;
+}
+
+/* Styles for the element at bottom of the column */
+.contact-container-top {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    column-gap: 10px;
+    justify-items: end;
+    align-items: center;
+}
+
+/* Styles the for the element at the bottom of the column*/
+.contact-number-top {
+    font-weight: 700;
+}
+
+/* Styles for the link in center of the card */
+a {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: #fff;
+}
+
+/* Sets the display properties for the element in center */
+.top-card-bottom {
+    display: grid;
+    height: 50px;
+    grid-column: 1 / span 3;
+    align-items: center;
+    align-content: center;
+    background-color: red;
+}
+
+/* ****************
+BOTTOM CARD********
+*****************/
+
+/* Sets Height, width, box-shadow and display properties */
+.bottom-card {
+    background-color: #fff;
+    width: 550px;
+    height: 350px;
+    padding-top: 10px;
+    display: grid;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+/* Sets the properties of the first container*/
+.bottom-top {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin: -2px 0px 0px 20px;
+}
+
+/* Sets the properties for the h3 and white box styling */
+.bottom-top-content {
+    display: flex;
+    width: 410px;
+    height: 80px;
+    padding-top: 10px;
+    clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+    background-color: #32a2e1;
+}
+
+/* Sets the color and the white space around it */
+.bottom-top-heading {
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* Sets the properties for the white box */
+.pin-box {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    content: '';
+    align-self: center;
+    background-color: #fff;
+}
+
+/* .bottom-logo {
+    display: flex;
+    align-self: flex-end;
+} */
+
+/* Sets the size of the img logo */
+.bottom-logo > object {
+    width: 72px;
+    height: 72px;
+}
+
+/******* 
+STARTS HERE ( Sets the properties of the text in center position
+********/
+.bottom-body-title {
+    text-align: center;
+}
+
+.instruction {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.direction {
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.direction span {
+    font-weight: 700;
+}
+
+.token {
+    font-size: 22px;
+}
+
+.token span {
+    font-weight: 700;
+}
+
+.amount {
+    font-size: 48px;
+    font-weight: 700;
+}
+/******* 
+ENDS HERE
+********/
+
+/* The Footer and Divider Line Styling */
+.bottom-footer {
+    display: flex;
+    /* gap: 250px; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
